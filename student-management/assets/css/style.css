@@ -1,0 +1,237 @@
+/* ========== GLOBAL RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ========== BACKGROUND ========== */
+body {
+    min-height: 80vh;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color: #ffffff;
+}
+
+/* ========== GLASS CONTAINER ========== */
+.container {
+    width: 50%;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+    padding: 25px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.pg-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.di-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+}
+
+.formdi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========== HEADINGS ========== */
+h1, h2, h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* ========== NAVBAR (GLASSY) ========== */
+.navbar {
+    width: 100%;
+    padding: 14px 20px;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ========== FORMS ========== */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+form input,
+form select {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+
+    color: #ffffff;
+    outline: none;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus,
+form select:focus {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* ========== BUTTONS ========== */
+button,
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 18px;
+
+    background: linear-gradient(
+        135deg,
+        #43cea2,
+        #185a9d
+    );
+
+    border: none;
+    border-radius: 8px;
+
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+/* ========== TABLES (GLASSY) ========== */
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background: rgba(0, 0, 0, 0.35);
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ========== LINKS ========== */
+a {
+    color: #cce6ff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* ========== STATUS MESSAGES ========== */
+.success {
+    margin-top: 15px;
+    color: #9effc2;
+    font-weight: 500;
+}
+
+.error {
+    margin-top: 15px;
+    color: #ffb3b3;
+    font-weight: 500;
+}
+
+/* ===== ADMIN DASHBOARD ===== */
+.admin-box {
+    flex-direction: column;     /* stack items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Remove default UL styling */
+.menu {
+    list-style: none;           /* remove bullets */
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Space between items */
+.menu li {
+    margin: 10px 0;
+}
+
+/* Menu links styling */
+.menu a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
